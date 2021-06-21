@@ -6,8 +6,6 @@ import matplotlib.pyplot as plt
 from yoloConvert import *
 import numpy as np
 
-random.seed(time())
-
 class_id_to_name_mapping = dict(zip(class_name_to_id_mapping.values(), class_name_to_id_mapping.keys()))
 
 

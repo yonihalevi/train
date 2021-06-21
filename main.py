@@ -6,6 +6,8 @@ import argparse
 
 
 def main():
+    random.seed(time())
+
     parser = argparse.ArgumentParser(description='convert to format, orgenize in train/test/vld folders')
     parser.add_argument('--clean', help='clean all artifacts. leave only original images and xml')
     parser.add_argument('--format', help='create txt file per image out of the original xml. the txt will bein yolo format')
@@ -14,6 +16,7 @@ def main():
     parser.add_argument('-tr', help="percentage of training set", default='0.8')
     parser.add_argument('-ts', help="percentage of testing set", default='0.1')
     parser.add_argument('-vl', help="percentage of validation set", default='0.1')
+    parser.add_argument('--detect', help='show a random image detected')
     args = parser.parse_args()
 
     #set the annotation directory location
@@ -37,7 +40,6 @@ def main():
 
     if args.prep:
         split_and_move_dataset(path, float(args.tr), float(args.ts), float(args.vl))
-
 
 if __name__ == "__main__":
     main()
