@@ -1,4 +1,3 @@
-class-id class-name
 0 rice
 1 rice
 2 rice
@@ -782,10 +781,10 @@ class-id class-name
 796 yellow cheese
 797 yellow cheese
 798 cream cheese
-799 canned tuna
-800 canned tuna
-801 canned tuna
-802 canned tuna
+799 flavored butter
+800 flavored butter
+801 plain butter
+802 tartare sauce
 803 french cheese
 804 cake
 805 cake

@@ -58,4 +58,4 @@ def show_random_labeling(path, count):
         plot_bounding_box(image, annotation_list)
 
 if __name__ == "__main__":
-    main()
+    show_random_labeling('../grozi/src/3264', 1)
